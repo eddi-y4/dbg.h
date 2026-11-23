@@ -72,31 +72,6 @@
 
 //#define stderr stderr
 
-/* ================================================================
- * Formatting
- * ================================================================
- * from fmt.h
- * TYPE_TABLE(X) is the type registry.
- *
- * Each entry has:
- *
- *     X(type, printf_format, view_expression)
- *
- * `v` in view_expression refers to the value being formatted.
- *
- * The table can be extended by defining DBG_USER_TYPE_TABLE(X)
- * before including this header.
- *
- * Example:
- *
- *     #define USER_TYPE_TABLE(X) \
- *         X(my_type, "%d", (v).value)
- *
- * The resulting generic formatter can then be used independently
- * of DBG_TRACK:
- *
- *     fprintf(stderr, TYPE_FMT(x), TYPE_VIEW(x));
- */
 
 
 /* ================================================================
